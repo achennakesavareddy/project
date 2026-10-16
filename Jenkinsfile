@@ -3,6 +3,8 @@ pipeline {
   environment {
     REGISTRY = 'finalproject-gsg3c5awh3cehkc5.azurecr.io'
     IMAGE = 'day1-demo'
+    JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
+    PATH = "${JAVA_HOME}/bin:${env.PATH}"
   }
   stages {
     stage('Checkout') { steps { checkout scm } }
