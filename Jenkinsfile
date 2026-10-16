@@ -5,7 +5,7 @@ pipeline {
     }
 
     environment {
-        REGISTRY = '<registry-name>.azurecr.io'
+        REGISTRY = 'finalproject.azurecr.io'
         IMAGE = 'day1-demo'
     }
 
